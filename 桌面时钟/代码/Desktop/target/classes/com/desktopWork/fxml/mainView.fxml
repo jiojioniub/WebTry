@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="paneBackground" prefHeight="460.0" prefWidth="250.0" style="-fx-background-color: rgba(0,0,0,0);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.desktopWork.controller.MainCtrl">
+   <children>
+      <Label fx:id="labelData" alignment="CENTER" onMouseClicked="#getData" prefHeight="23.0" prefWidth="251.0" text="点击显示日期" textAlignment="CENTER" />
+      <Label fx:id="labelTime" alignment="CENTER" layoutY="26.0" onMouseClicked="#getTime" prefHeight="80.0" prefWidth="251.0" text="点击显示时间" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="69.0" />
+         </font></Label>
+<!--      <Label fx:id="labelWord" alignment="CENTER" layoutY="114.0" onMouseClicked="#getRandomWord" prefHeight="23.0" prefWidth="251.0" text="语句随机" textAlignment="CENTER"><font><Font name="Ink Free" size="15.0" /></font></Label>-->
+      <Button fx:id="labelAdd" layoutX="204.0" layoutY="144.0" mnemonicParsing="false" onMouseClicked="#addList" style="-fx-background-color: #ffffff00; -fx-border-color: #000000;" text="新建" />
+      <TextField fx:id="labelInput" layoutX="8.0" layoutY="144.0" prefHeight="23.0" prefWidth="190.0" style="-fx-border-color: #000000; -fx-background-color: #ffffff;" />
+      <ListView fx:id="labelList" editable="true" layoutX="5.0" layoutY="210.0" onMouseClicked="#eventList" prefHeight="248.0" prefWidth="241.0" style="-fx-background-color: #ffffff00;">
+      </ListView>
+      <ColorPicker fx:id="colorPicker" blendMode="HARD_LIGHT" editable="true" layoutY="175.0" onAction="#backgroundColor" prefHeight="23.0" prefWidth="86.0" promptText="背景颜色" style="-fx-background-color: #ffffff00;" />
+      <ColorPicker fx:id="fontColorPicker" blendMode="HARD_LIGHT" editable="true" layoutX="96.0" layoutY="175.0" onAction="#fontColor" prefHeight="23.0" prefWidth="86.0" promptText="字体颜色" style="-fx-background-color: #ffffff00;" />
+      <CheckBox fx:id="checkBox" layoutX="198.0" layoutY="175.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="48.0" text="删除" />
+   </children>
+</AnchorPane>

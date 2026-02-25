@@ -1,0 +1,6 @@
+create table tb_word(
+word_id INTEGER(16) not null PRIMARY key auto_increment,
+word_wordname VARCHAR(35) not null
+);
+
+
